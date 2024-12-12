@@ -5,7 +5,7 @@ namespace Hackerrank_C__solutions
     internal class QuickSort
     {
         // Main Entry Point: This is where the program starts execution
-        public static void Main6(string[] args)
+        public static void Main(string[] args)
         {
             Console.WriteLine("Quick Sort Algorithm");
             Console.WriteLine("---------------------");
