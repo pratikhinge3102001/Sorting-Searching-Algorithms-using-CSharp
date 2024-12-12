@@ -4,7 +4,7 @@ namespace Hackerrank_C__solutions
 {
     internal class SelectionSort
     {
-        public static void Main8(string[] args)
+        public static void Main(string[] args)
         {
             Console.WriteLine("Selection Sort Algorithm");
             Console.WriteLine("---------------------");
