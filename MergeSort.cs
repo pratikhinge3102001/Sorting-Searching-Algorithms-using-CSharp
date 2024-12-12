@@ -4,7 +4,7 @@ namespace Hackerrank_C__solutions
 {
     internal class MergeSort
     {
-        public static void Main10(string[] args)
+        public static void Main(string[] args)
         {
             Console.WriteLine("Merge Sort Algorithm");
             Console.WriteLine("---------------------");
