@@ -5,7 +5,7 @@ namespace Hackerrank_C__solutions
 {
     internal class HeapSort
     {
-        public static void Main9(string[] args)
+        public static void Main(string[] args)
         {
             Console.WriteLine("Heap Sort Algorithm");
             Console.WriteLine("---------------------");
