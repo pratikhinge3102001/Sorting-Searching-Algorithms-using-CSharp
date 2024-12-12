@@ -27,7 +27,7 @@ namespace Hackerrank_C__solutions
 
         }
 
-        public static void Main5(string[] args)
+        public static void Main(string[] args)
         {
             Console.WriteLine("enter no. of elements");
             int size = Convert.ToInt32(Console.ReadLine());
