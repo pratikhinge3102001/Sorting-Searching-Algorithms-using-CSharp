@@ -163,7 +163,7 @@ namespace Soln
 
     class Solution
     {
-        public static void Main2(string[] args)
+        public static void Main(string[] args)
         {
             // Read input for the array size (not used in logic but part of input format)
             int arCount = Convert.ToInt32(Console.ReadLine().Trim());
