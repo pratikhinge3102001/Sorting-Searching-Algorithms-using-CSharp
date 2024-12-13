@@ -4,7 +4,7 @@ namespace Hackerrank_C__solutions
 {
     internal class LinearSearch
     {
-        public static void Main12(string[] args)
+        public static void Main(string[] args)
         {
             Console.WriteLine("Linear Search Algorithm");
             Console.WriteLine("---------------------");
