@@ -4,7 +4,7 @@ namespace Hackerrank_C__solutions
 {
     internal class InsertionSort
     {
-        public static void Main10(string[] args)
+        public static void Main(string[] args)
         {
             Console.WriteLine("Insertion Sort Algorithm");
             Console.WriteLine("---------------------");
