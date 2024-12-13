@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace Hackerrank_C__solutions 
+namespace Hackerrank_C__solutions
 {
-    internal class InsertionSort
+    internal class LinearSearch
     {
-        public static void Main10(string[] args)
+        public static void Main12(string[] args)
         {
-            Console.WriteLine("Insertion Sort Algorithm");
+            Console.WriteLine("Linear Search Algorithm");
             Console.WriteLine("---------------------");
 
             // Input Validation and Array Initialization
@@ -17,17 +17,19 @@ namespace Hackerrank_C__solutions
             Console.WriteLine("Original Array:");
             PrintArray(array);
 
-            // Sort the array using Insertion Sort
-            InsertionSortAlgorithm(array);
+            // Get the element to search for
+            int x = GetPositiveIntegerInput("Enter the element to search for: ");
 
-            // Display the sorted array
-            Console.WriteLine("Sorted Array:");
-            PrintArray(array);
-
-            // Reverse the array for descending order
-            ReverseArray(array);
-            Console.WriteLine("Sorted Array (Descending):"); 
-            PrintArray(array);
+            // Perform linear search
+            int linearSearchIndex = LinearSearchAlgorithm(array, x);
+            if (linearSearchIndex != -1)
+            {
+                Console.WriteLine("Element found at index " + linearSearchIndex + " using linear search.");
+            }
+            else
+            {
+                Console.WriteLine("Element not found using linear search.");
+            }
         }
 
         #region Input/Output Helpers
@@ -69,35 +71,24 @@ namespace Hackerrank_C__solutions
             Console.WriteLine(string.Join(" ", array));
         }
 
-        static void ReverseArray(int[] array)
-        {
-            Array.Reverse(array);
-        }
-
         #endregion
 
-        #region Insertion Sort Algorithm
+        #region Search Algorithms
 
-        static void InsertionSortAlgorithm(int[] arr)
+        // Linear Search
+        static int LinearSearchAlgorithm(int[] arr, int x)
         {
             int n = arr.Length;
-            for (int i = 1; i < n; ++i)
+            for (int i = 0; i < n; i++)
             {
-                int key = arr[i];
-                int j = i - 1;
-
-                /* Move elements of arr[0..i-1], that are
-                   greater than key, to one position ahead
-                   of their current position */
-                while (j >= 0 && arr[j] > key)
+                if (arr[i] == x)
                 {
-                    arr[j + 1] = arr[j];
-                    j = j - 1;
+                    return i;
                 }
-                arr[j + 1] = key;
             }
+            return -1;
         }
-
-        #endregion
     }
+
+    #endregion
 }
